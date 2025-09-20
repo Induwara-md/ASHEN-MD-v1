@@ -51,7 +51,7 @@ const df = __dirname + '/auth_info_baileys/creds.json';
 
 if (!fs.existsSync(df)) {
   if (config.SESSION_ID) {
-    const sessdata = config.SESSION_ID.replace("KAVIDU-MD=", "");
+    const sessdata = config.SESSION_ID.replace("ASHEN-MD=", "");
 
     if (sessdata.includes("#")) {
       const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
@@ -165,8 +165,8 @@ conn.ev.on('connection.update', async (update) => {
                     console.warn("⚠️ Failed to fetch connect message text:", fetchErr.message);
                 }
 
-                await conn.sendMessage(`94757054054@s.whatsapp.net`, {
-  image: { url: 'https://i.ibb.co/zVtZsRM9/ffbaba73c507fa9d.jpg' },
+                await conn.sendMessage(`94781772224@s.whatsapp.net`, {
+  image: { url: 'https://files.catbox.moe/7qi29q.jpg' },
   caption: '*BOT DEPLOY DONE🎯*'
 });
 
